@@ -1,0 +1,197 @@
+body {
+	font-size: 16px;
+	font-family: 'Orelega One', cursive;
+	font-weight: 300;
+}
+
+*,*::before,*::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+	text-align: center;
+
+}
+
+/*--layout--*/
+body{
+	display: grid;
+	grid-template-areas: 
+		"fejlec"
+		"kontent"
+		"lablec"
+	;
+	grid-template-rows: max-content 1fr max-content;
+	min-height: 100vh;
+
+}
+header{
+	/*background-color: grey;*/
+	grid-area: fejlec;
+}
+main{
+	/*background-color: blue;*/
+	grid-area: kontent;
+}
+footer{
+	
+	grid-area: lablec;
+	background-color: #d27979;
+
+
+}
+
+
+p{
+margin-bottom: 1rem;
+}
+
+a{
+	text-decoration: none;
+}
+h1{
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+	margin-top: 2rem;
+
+}
+header{
+	background-color: #d27979;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: .75rem 1rem;
+
+}
+.fejlec_menu{
+	font-size: 2rem;
+	font-weight: 400;
+	display: inline-block;
+	width: 14rem;
+	border: 3px solid black;
+	color: black;
+	border-radius: 4rem;
+	background: white;
+	
+	cursor: pointer;
+	margin-right: 1.5rem;
+	margin-top: 1rem;
+}
+.fejlec_cim{
+	font-size: 2.5rem;
+	font-weight: 450;
+
+}
+
+header .fejlec_menu:hover{
+	background: #663300;
+	color: white;
+	
+}
+main{
+	background-color: #fff2cc;
+}
+.elrendezes{
+	display: inline-block;
+}
+.szovegresz{
+	display: inline-block;
+	border: 2px solid purple;
+	max-width: 45%;
+	min-height: 25rem;
+	min-width: 25rem;
+	padding: 1rem;
+	margin-top: 1.5rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	float: left;
+	border-radius: 1rem;
+
+}
+img.profil_kep{
+	min-width: 22rem;
+	min-height: 22rem;
+}
+
+
+
+.bemutatkozas{
+	padding: 1rem;
+	font-size: 1.4rem;
+}
+
+
+.bemutatkozo_kep{
+	align-content: center;
+
+}
+
+
+
+img{
+	max-height: 50%;
+	max-width: 50%;
+}
+.kepek_racs{
+	display: inline-block;
+}
+.hobbi{
+	
+	margin: 2rem;
+
+}
+.kepek_racs_flex{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 1rem;
+}
+.kepek_racs_flex .kepek_racs_flex{
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	flex-grow: 1;
+
+}
+.elerhetoseg_fo{
+	
+	border: 2px solid purple;
+	max-width: 100%;
+	padding: 1rem;
+	margin-top: 1.5rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	
+	border-radius: 1rem;
+	
+}
+.elerhetoseg_szoveg{
+	font-weight: 500;
+	font-size: 2.4rem;
+}
+.link:hover{
+	text-decoration:underline;
+}
+.email_cim{
+	color: orange;
+}
+.dukumentacio_foresz{
+	text-align: center;
+}
+.dokumentacio_szoveg{
+	font-size: 2rem;
+	font-weight: 350;
+}
+.dokument_kepek{
+	max-height: 30rem;
+	max-width: 20rem;
+	min-width: 20rem;
+	min-height: 30rem;
+	padding: 1rem;
+}
+.referencia_szoveg{
+	font-size: 1.5rem;
+	font-weight: 350rem;
+}
